@@ -12,7 +12,7 @@ import history from "../../../../configs/history";
 import TagWait from "../../components/tag/wait";
 import ChildrenItem from "./children";
 import NetworkItem from "./network";
-import { ElementModel, elementService } from "../../services/elements.service";
+import { ElementModel, elementService } from "../../services/element/elements.service";
 
 const Container = styled.div`
     display: block;

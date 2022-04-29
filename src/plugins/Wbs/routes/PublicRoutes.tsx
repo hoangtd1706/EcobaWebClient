@@ -4,7 +4,8 @@ import history from "../../../configs/history";
 import Plan from "../pages";
 import ListProject from "../pages/project/ListProject";
 import Element from "../pages/element";
-import Component from "../pages/component";
+import Components from "../pages/component";
+import ComponentItem from "../pages/component/item";
 
 export default function PublicRoutes(): JSX.Element {
     const { path } = useRouteMatch();
@@ -30,8 +31,8 @@ export default function PublicRoutes(): JSX.Element {
     return (
         <Switch>
             <Switch>
-                <Route exact path={`${path}/projects/:projectCode/components/:componentCode`} component={Component} />
-                <Route exact path={`${path}/projects/:projectCode/components`} component={Component} />
+                <Route exact path={`${path}/projects/:projectCode/components/:componentCode`} component={ComponentItem} />
+                <Route exact path={`${path}/projects/:projectCode/components`} component={Components} />
                 <Route exact path={`${path}/projects/:projectCode/elements/:elementCode`} component={Element} />
                 <Route exact path={`${path}/projects/:projectCode/elements`} component={Element} />
                 <Route exact path={`${path}/projects/:projectCode`} component={Element} />

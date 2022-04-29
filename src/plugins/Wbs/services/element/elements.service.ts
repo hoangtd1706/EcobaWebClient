@@ -1,5 +1,6 @@
+import { axiosClient } from "../client.service";
+
 import {
-  axiosClient,
   URI_ELEMENTS,
   URI_ELEMENT_APPROVE_CONFIRM_REQUEST,
   URI_ELEMENT_UPDATE,
@@ -8,7 +9,7 @@ import {
   URI_ELEMENT_REMOVE_CHILDREN,
   URI_ELEMENT_REMOVE_NETWORK,
   URI_ELEMENT_REMOVE_NETWORK_CONFIRM_REQUEST,
-} from "./client.service";
+} from "./constant";
 
 export type ElementModel = {
   elementCode: string;
